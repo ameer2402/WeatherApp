@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="image trial.png">
+    <title>Weather App</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="weather.css">
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary "  data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand">Weather App</a>
+        
+        <form class="d-flex form"  role="search">
+          <input class="form-control me-5 " id="city" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success"    id="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+     
+              
+      <main>
+        <h1 class="text-center main_title pt-3">Weather for <span id="cityInput"></span></h1>
+            <div class="subcontainer1">
+              <div class="subcontainer11">
+                 <img src="imagetrial1.png" alt="">
+              </div>
+              <div class="subcontainer12">
+                <h1><span id="temp"></span></h1>
+              </div>
+              <div class="subcontainer13">
+                <div class="deg">&deg;</div>
+                <div class="centi">C</div>
+              </div>
+              <div class="subcontainer14">
+                <h5>Feels Like :<span id="feels_like"></span>&deg; C</h5>
+                
+                <h5> <img src="https://th.bing.com/th/id/R.7d7ed56490ba4c60d797839bf01e6379?rik=2Az3nU5mUqy1BQ&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_315342.png&ehk=UFJo4JxLLSCsM4MnsCETISj%2fO%2ftrdW%2b6pqqAeBf8ySY%3d&risl=&pid=ImgRaw&r=0" alt="">&nbsp;Humidity : <span id="humidity"></span>&percnt;</h5>
+              </div>
+            </div>
+            <div class="subcontainer2">
+              <div class="subcontainer21">
+                   <h5>Wind Speed: <span id="wind_speed"></span>Km/h</h5>
+              </div>
+              <div class="subcontainer22">
+                <img src="https://th.bing.com/th/id/R.221aed42c52299a194153f6bb0d8c1aa?rik=P5Ayt9JKxoMFkg&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2f2%2f2%2f1%2fa%2f1374613796305304640tnm.png&ehk=QXNv3yqzATIsFVjPjKs2PrCYBGtutRs8j%2fymrXHAef4%3d&risl=&pid=ImgRaw&r=0" alt="">
+                <h5>Wind Direction : <span id="wind_direction"></span></h5>
+              </div>
+              <div class="subcontainer23">
+               <img src="https://th.bing.com/th/id/OIP.L7oX--r3tU62DDK2iAEJ1gHaJt?pid=ImgDet&w=748&h=980&rs=1" alt="">
+               <h5>Min_Temp : &nbsp;&nbsp;&nbsp;<span id="min_temp"></span>&deg;C</h5>
+              </div>
+              <div class="subcontainer24">
+                <img src="https://www.freeiconspng.com/thumbs/temperature-icon-png/temperature-icon-png-18.png" alt="">
+                <h5>Max_Temp : &nbsp;&nbsp;&nbsp;&nbsp;<span id="max_temp"></span>&deg; C</h5>
+              </div>
+            </div>
+            <div class="subcontainer3">
+              <div class="subcontainer31">
+                <img src="icons8-sunrise.gif" alt="">
+                <h5>Sunrise : <span id="sunrise"></span></h5>
+              </div>
+              <div class="subcontainer32">
+                <img src="icons8-sunset.gif" alt="">
+                <h5>Sunset : <span id="sunset"></span></h5>
+              </div>
+            </div>
+            <footer>
+              <h5>&commat;Thank you for visiting my website</h5>
+              
+            </footer>
+        </main>
+      
+      
+      
+        
+            
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
